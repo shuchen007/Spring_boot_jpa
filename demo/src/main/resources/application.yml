@@ -1,0 +1,24 @@
+server:
+      port: 8081
+      context-path: /demo
+      tomcat:
+            uri-encoding: UTF-8
+spring:
+      jpa:
+          show-sql: true
+      datasource:
+                  driver-class-name: oracle.jdbc.driver.OracleDriver
+                  url: jdbc:oracle:thin:@11.11.177.213:1521:yyq
+                  username: yyq
+                  password: yyq_2017
+
+
+logging:
+         level:
+              org :
+                   springframework: WARN
+                   springboot:
+                              dao: DEBUG
+
+
+
